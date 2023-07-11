@@ -1,0 +1,2 @@
+class WitInterface:
+    pass
