@@ -8,7 +8,7 @@ class WitInterface:
             Wit.init()
             return
         if action == "add":
-            Wit.add()
+            Wit.add(args)
             return
         else:
             raise ValueError("not valid wit opt")
