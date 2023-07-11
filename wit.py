@@ -1,3 +1,6 @@
+import os
+
+from file_handler import FileHandler
 from wit_interface import WitInterface
 
 
@@ -12,9 +15,7 @@ class Wit(WitInterface):
             # handle nested wits
             pass
         else:
-            FileHandler.create_dir(".wit")
-            FileHandler.create_dir(".wit/images")
-            FileHandler.create_dir(".wit/staging_area")
+            FileHandler.create_wit()
 
     @staticmethod
     def move_to_staging(full_path):
@@ -23,9 +24,12 @@ class Wit(WitInterface):
 
     @staticmethod
     def add(args):
-        full_path = FileHandler.validate_path(args[0])
+        if args[0] == '.':
+            full_path = os.path.abspath(os.getcwd())#????????????????????????????????
+        else:
+            full_path = FileHandler.validate_path(args[0])
         Wit.move_to_staging(full_path)
 
     @staticmethod
-    def commit():
+    def commit(args):
         pass

@@ -10,5 +10,8 @@ class WitInterface:
         if action == "add":
             Wit.add()
             return
+        if action == "commit":
+            Wit.commit(args)
+            return
         else:
             raise ValueError("not valid wit opt")
