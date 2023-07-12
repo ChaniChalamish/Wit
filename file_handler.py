@@ -77,8 +77,9 @@ class FileHandler:
         # if not cls.validate_path(origin) and cls.validate_path(target):
         #     return False
         if os.path.isdir(origin):
-            correct_target = os.path.join(target, 'a')
-            shutil.copytree(origin, correct_target)  # TODO - create new dir?
+            # TODO - copy it without creating new folder
+            correct_target = os.path.join(target, 'new_folder')
+            shutil.copytree(origin, correct_target)
             return True
         elif os.path.isfile(origin):
             shutil.copyfile(origin, target)
