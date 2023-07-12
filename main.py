@@ -7,4 +7,6 @@ if __name__ == "__main__":
         raise ValueError("no command got")
     command = sys.argv[1]
     args = sys.argv[2:]
-    WitInterface.handle_commands(command, args)
+    print("args",args)
+
+WitInterface.handle_commands(command, args)

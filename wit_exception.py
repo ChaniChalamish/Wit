@@ -1,0 +1,2 @@
+class WitException(Exception):
+    pass
