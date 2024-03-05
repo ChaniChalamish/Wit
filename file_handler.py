@@ -1,21 +1,16 @@
-import logging
+from logger import Logger
 import os
 import shutil
 
 from wit_exception import WitException
 
-logging_format = "%(asctime)s LEVEL: %(levelname)s MSG: %(message)s"
-logging.basicConfig(format=logging_format, level=logging.DEBUG)
-base_logger = logging.getLogger(__name__)
-
-
 class FileHandler:
     _working_directory = None
     base_path = None
 
-    @staticmethod
-    def make_log():
-        base_logger.debug("make log")
+    # @staticmethod
+    # def make_log():
+    #     base_logger.debug("make log")
 
     # base path is location of .wit folder
 
