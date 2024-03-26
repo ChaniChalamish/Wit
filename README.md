@@ -14,14 +14,7 @@ wit is a lightweight Git implementation written in Python. It aims to provide th
 ```
    cd wit
    ```
-
-3. Install the required dependencies:
-   
-```
-   pip install -r requirements.txt
-   
-```
-4. Run the wit command-line tool:
+3. Run the wit command-line tool:
    
 ```
    python wit.py
