@@ -2,6 +2,7 @@
 
 ## Introduction
 wit is a lightweight Git implementation written in Python. It aims to provide the core functionality of Git, allowing users to version control their projects, manage branches, and track changes efficiently.
+#  Getting satrted
 ## Installation
 1. Clone the wit repository from GitHub:
    
